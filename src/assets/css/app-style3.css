@@ -1,0 +1,32 @@
+:root { --spacing-company: 3rem; --font-weight: 400; --border-radius: 0; }
+
+.appbar { background-color: #1b2832; color: #fff; }
+
+/* Header */
+.hero { background-color: #394046; background-image: url("https://source.unsplash.com/DNQ-M93tHmA/3000x1000"); background-position: center; background-size: cover; }
+
+header { padding: var(--spacing-company) 0; }
+
+header hgroup > :last-child { color: var(--h3-color); }
+
+header hgroup { margin-bottom: var(--spacing-company); }
+
+#appbar summary[role="link"].contrast:is([aria-current], :hover, :active, :focus) { background-color: transparent; color: var(--contrast-hover); }
+
+/* Main */
+@media (min-width: 992px) { .main .grid { grid-column-gap: var(--spacing-company); grid-template-columns: auto 25%; } }
+
+form.grid { grid-row-gap: 0; }
+
+/* Aside nav */
+aside img { margin-bottom: 0.25rem; }
+
+aside p { margin-bottom: var(--spacing-company); line-height: 1.25; }
+
+#signin { /* Hero Image      display: none; */ }
+
+#signin article { padding: 0; overflow: hidden; }
+
+#signin article div { padding: 1rem; }
+
+#signin aside { background-color: #374956; background-image: url("https://source.unsplash.com/8jeWeKdygfk/1000x1200"); background-position: center; background-size: cover; }
